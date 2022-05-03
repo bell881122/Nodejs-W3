@@ -9,4 +9,12 @@ const handleParam = (data) => {
     return newData;
 }
 
-module.exports = { handleParam };
+const showPosts = async (res, data) => {
+    const posts = await Post.find();
+    res.status(200).json({
+        "status": "success",
+        "posts": data ? data : posts
+    })
+}
+
+module.exports = { handleParam, showPosts };
