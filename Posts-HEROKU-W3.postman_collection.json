@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "7c104f5f-b4f4-4975-aff5-be1bd912b34e",
+		"name": "Posts-HEROKU-W3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新增項目",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"測試人員\",\r\n    \"tags\":\"興趣\",\r\n    \"type\":\"group\",\r\n    \"content\":\"測試內容\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://polar-badlands-56257.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-badlands-56257",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得全部",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://polar-badlands-56257.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-badlands-56257",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OPTIONS",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://polar-badlands-56257.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-badlands-56257",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"title\":\"ssa\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://polar-badlands-56257.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"polar-badlands-56257",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除: id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"title\":\"ssa\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://polar-badlands-56257.herokuapp.com/posts/ID",
+					"protocol": "https",
+					"host": [
+						"polar-badlands-56257",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯: id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"content\":\"測試測試測試測試\", \"tags\":[\"唱歌\",\"跳舞\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://polar-badlands-56257.herokuapp.com/posts/ID",
+					"protocol": "https",
+					"host": [
+						"polar-badlands-56257",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"ID"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
