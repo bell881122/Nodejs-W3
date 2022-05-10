@@ -6,7 +6,7 @@ const handleError = (err, res) => {
             { ...error, [el]: err.errors[el].properties.message } :
             { ...error, [el]: err.errors[el].message }
     );
-    res.status(200).json({
+    res.status(400).json({
         "status": "failed",
         "error": error
     })
